@@ -1,0 +1,4 @@
+## guava conversions ##
+
+.checkNotNull : check not null
+	java.lang.Object         →  Preconditions.checkNotNull($expr$)
