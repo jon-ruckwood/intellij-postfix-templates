@@ -2,3 +2,11 @@
 
 .checkNotNull : check not null
 	java.lang.Object         →  Preconditions.checkNotNull($expr$)
+
+## other (a mix bag) ##
+
+.info : log a variable at INFO Level
+  NON_VOID                 →  LOGGER.info("$expr$: {}", $expr$)
+
+.debug : log a variable at INFO Level
+  NON_VOID                 →  LOGGER.info("$expr$: {}", $expr$)
