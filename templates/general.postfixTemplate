@@ -10,3 +10,6 @@
 
 .debug : log a variable at INFO Level
   NON_VOID                 →  LOGGER.info("$expr$: {}", $expr$)
+
+.byClass : collection by class
+	java.lang.Collection     →  $expr$.stream().collect(Collectors.toMap(Object::getClass, identity()))
